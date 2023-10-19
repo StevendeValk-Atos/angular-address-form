@@ -1,4 +1,7 @@
 .labeled-input-container {
     display: flex;
     flex-direction: row;
+    margin: 10px;
+    overflow: auto;
+    gap: 20px;
 }

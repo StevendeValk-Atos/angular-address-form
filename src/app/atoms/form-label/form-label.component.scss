@@ -1,0 +1,10 @@
+.label-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+label {
+    display: block;
+    white-space: nowrap;
+}
