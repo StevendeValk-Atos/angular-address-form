@@ -7,6 +7,7 @@ import { FormLabelComponent } from './atoms/form-label/form-label.component';
 import { LabeledInputComponent } from './molecules/labeled-input/labeled-input.component';
 import { AddressInputGroupComponent } from './organisms/address-input-group/address-input-group.component';
 import { InputGroupHeaderComponent } from './molecules/input-group-header/input-group-header.component';
+import { FormSubmitButtonComponent } from './atoms/form-submit-button/form-submit-button.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { InputGroupHeaderComponent } from './molecules/input-group-header/input-
     FormLabelComponent,
     LabeledInputComponent,
     AddressInputGroupComponent,
-    InputGroupHeaderComponent
+    InputGroupHeaderComponent,
+    FormSubmitButtonComponent
   ],
   imports: [
     BrowserModule
