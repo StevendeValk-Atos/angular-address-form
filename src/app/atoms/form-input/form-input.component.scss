@@ -5,6 +5,9 @@ input {
     padding: 5px;
 }
 
+// https://developer.mozilla.org/en-US/docs/Web/CSS/:host
+// https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow
+// https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 :host {
     flex-grow: 1;
     box-sizing: border-box;
