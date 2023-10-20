@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, EventEmitter, Output } from "@angular/core";
 
 @Component({
     selector: "app-form-input",
@@ -7,9 +7,12 @@ import { Component } from "@angular/core";
 })
 export class FormInputComponent {
     value: string = "";
+    
+    @Output() onValueChange = new EventEmitter<any>();
 
     // src: https://www.angularjswiki.com/angular/ngmodelchange-change-angular/
-    valueChange (value : string) : void {
-        console.log(value);
+    // src: https://stackoverflow.com/questions/42107167/how-to-pass-data-from-child-to-parent-component-angular
+    public valueChange(value: string): void {
+        this.onValueChange.emit(value);
     }
 }
