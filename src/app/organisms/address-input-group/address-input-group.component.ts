@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, EventEmitter, Output } from "@angular/core";
 import { AddressDetails } from "src/app/models/AddressDetails";
 
 @Component({
@@ -9,15 +9,20 @@ import { AddressDetails } from "src/app/models/AddressDetails";
 export class AddressInputGroupComponent {
     addressDetails: AddressDetails = new AddressDetails();
 
+    @Output() onAddressDetailsChange = new EventEmitter<any>();
+
     nameChange(value: string) {
         this.addressDetails.name = value;
+        this.onAddressDetailsChange.emit(this.addressDetails);
     }
 
     addressChange(value: string) {
         this.addressDetails.address = value;
+        this.onAddressDetailsChange.emit(this.addressDetails);
     }
 
     cityChange(value: string) {
         this.addressDetails.city = value;
+        this.onAddressDetailsChange.emit(this.addressDetails);
     }
 }
