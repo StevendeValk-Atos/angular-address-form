@@ -10,6 +10,7 @@ import { InputGroupTitleComponent } from './atoms/input-group-title/input-group-
 import { FormSubmitButtonComponent } from './atoms/form-submit-button/form-submit-button.component';
 import { AddressInputFormComponent } from './templates/address-input-form/address-input-form.component';
 import { FormFooterComponent } from './molecules/form-footer/form-footer.component';
+import { FormTitleComponent } from './atoms/form-title/form-title.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormFooterComponent } from './molecules/form-footer/form-footer.compone
     InputGroupTitleComponent,
     FormSubmitButtonComponent,
     AddressInputFormComponent,
-    FormFooterComponent
+    FormFooterComponent,
+    FormTitleComponent
   ],
   imports: [
     BrowserModule
