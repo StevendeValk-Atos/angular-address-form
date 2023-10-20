@@ -9,6 +9,7 @@ import { AddressInputGroupComponent } from './organisms/address-input-group/addr
 import { InputGroupHeaderComponent } from './molecules/input-group-header/input-group-header.component';
 import { FormSubmitButtonComponent } from './atoms/form-submit-button/form-submit-button.component';
 import { AddressInputFormComponent } from './templates/address-input-form/address-input-form.component';
+import { FormFooterComponent } from './molecules/form-footer/form-footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AddressInputFormComponent } from './templates/address-input-form/addres
     AddressInputGroupComponent,
     InputGroupHeaderComponent,
     FormSubmitButtonComponent,
-    AddressInputFormComponent
+    AddressInputFormComponent,
+    FormFooterComponent
   ],
   imports: [
     BrowserModule
