@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { AddressDetails } from "src/app/models/AddressDetails";
 
 @Component({
     selector: "app-address-input-group",
@@ -6,23 +7,17 @@ import { Component } from "@angular/core";
     styleUrls: ["./address-input-group.component.scss"],
 })
 export class AddressInputGroupComponent {
-    name!: string;
-    address!: string;
-    place!: string;
-
+    addressDetails: AddressDetails = new AddressDetails();
 
     nameChange(value: string) {
-        this.name = value;
-        console.log(this.name);
+        this.addressDetails.name = value;
     }
 
     addressChange(value: string) {
-        this.address = value;
-        console.log(this.address);
+        this.addressDetails.address = value;
     }
 
-    placeChange(value: string) {
-        this.place = value;
-        console.log(this.place);
+    cityChange(value: string) {
+        this.addressDetails.city = value;
     }
 }
