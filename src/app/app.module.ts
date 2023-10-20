@@ -12,6 +12,7 @@ import { FormSubmitButtonComponent } from './atoms/form-submit-button/form-submi
 import { AddressInputFormComponent } from './templates/address-input-form/address-input-form.component';
 import { FormFooterComponent } from './molecules/form-footer/form-footer.component';
 import { FormTitleComponent } from './atoms/form-title/form-title.component';
+import { FormHeaderComponent } from './molecules/form-header/form-header.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormTitleComponent } from './atoms/form-title/form-title.component';
     FormSubmitButtonComponent,
     AddressInputFormComponent,
     FormFooterComponent,
-    FormTitleComponent
+    FormTitleComponent,
+    FormHeaderComponent
   ],
   imports: [
     BrowserModule,
