@@ -20,4 +20,8 @@ export class AddressInputFormComponent {
     CtoAddressDetailsChange(addressDetails: AddressDetails) {
         this.addressFormData.CTO = addressDetails;
     }
+
+    submitButtonClick() : void {
+        console.log(this.addressFormData);
+    }
 }
