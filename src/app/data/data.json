@@ -1,0 +1,17 @@
+[
+    {
+        "address": "Molenweg 23",
+        "name": "Lisa de Jong",
+        "city": "Utrecht"
+    },
+    {
+        "address": "Dorpsstraat 69",
+        "name": "Pieter Bakker",
+        "city": "Amsterdam"
+    },
+    {
+        "address": "Kerkstraat 42",
+        "name": "Mohamed El Amrani",
+        "city": "Eindhoven"
+    }
+]
