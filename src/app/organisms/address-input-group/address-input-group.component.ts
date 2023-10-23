@@ -1,4 +1,5 @@
-import { Component, EventEmitter, Output } from "@angular/core";
+import { Component, EventEmitter, Output, Input } from "@angular/core";
+import { FormGroup } from "@angular/forms";
 import { AddressDetails } from "src/app/models/AddressDetails";
 
 @Component({
@@ -10,6 +11,7 @@ export class AddressInputGroupComponent {
     addressDetails: AddressDetails = new AddressDetails();
 
     @Output() onAddressDetailsChange = new EventEmitter<any>();
+    @Input() form!: FormGroup;
 
     nameChange(value: string) {
         this.addressDetails.name = value;

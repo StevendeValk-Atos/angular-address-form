@@ -1,8 +1,8 @@
-<div class="input-group-container">
+<div class="input-group-container" [formGroup]="form">
     <app-input-group-title>
         <ng-content></ng-content>
     </app-input-group-title>
-    <app-labeled-input (onValueChange)="nameChange($event)">Naam:</app-labeled-input>
-    <app-labeled-input (onValueChange)="addressChange($event)">Adres:</app-labeled-input>
-    <app-labeled-input (onValueChange)="cityChange($event)">Woonplaats:</app-labeled-input>
+    <app-labeled-input [form]="form" controlName="name" (onValueChange)="nameChange($event)">Naam:</app-labeled-input>
+    <app-labeled-input [form]="form" controlName="address" (onValueChange)="addressChange($event)">Adres:</app-labeled-input>
+    <app-labeled-input [form]="form" controlName="city" (onValueChange)="cityChange($event)">Woonplaats:</app-labeled-input>
 </div>

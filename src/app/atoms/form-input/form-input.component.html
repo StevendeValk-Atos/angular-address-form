@@ -1,2 +1,2 @@
 <!-- src: https://stackoverflow.com/questions/57901940/how-ngmodel-and-ngmodelchange-work-together -->
-<input type="text" [ngModel]="value" (ngModelChange)="valueChange($event)"/>
+<input type="text" [formControl]="controlName" [ngModel]="value" (ngModelChange)="valueChange($event)"/>
