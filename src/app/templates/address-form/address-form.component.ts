@@ -9,8 +9,6 @@ import { AddressFormData } from "src/app/models/AddressFormData";
     styleUrls: ["./address-form.component.scss"],
 })
 export class AddressFormComponent implements OnInit {
-    addressFormData: AddressFormData = new AddressFormData();
-
     constructor(private formBuilder: FormBuilder) {}
 
     addressForm!: FormGroup;
@@ -57,17 +55,6 @@ export class AddressFormComponent implements OnInit {
         } else {
             throw new Error('Control must be a FormGroup');
         }
-    }
-
-    CeoAddressDetailsChange(addressDetails: AddressDetails) {
-        this.addressFormData.CEO = addressDetails;
-        console.log(this.addressFormData);
-    }
-    CfoAddressDetailsChange(addressDetails: AddressDetails) {
-        this.addressFormData.CFO = addressDetails;
-    }
-    CtoAddressDetailsChange(addressDetails: AddressDetails) {
-        this.addressFormData.CTO = addressDetails;
     }
 
     submitButtonClick(): void {

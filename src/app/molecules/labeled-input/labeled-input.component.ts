@@ -7,8 +7,6 @@ import { FormControl, FormGroup } from "@angular/forms";
     styleUrls: ["./labeled-input.component.scss"],
 })
 export class LabeledInputComponent {
-    @Output() onValueChange = new EventEmitter<any>();
-    
     @Input() form!: FormGroup;
     @Input() controlName!: string;
 
@@ -20,9 +18,5 @@ export class LabeledInputComponent {
         else {
             throw new Error("Control must be a FormControl");
         }
-    }
-
-    valueChange(value: string) : void {
-        this.onValueChange.emit(value);
     }
 }

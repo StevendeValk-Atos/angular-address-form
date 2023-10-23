@@ -1,7 +1,7 @@
 <form [formGroup]="addressForm">
     <app-form-header>Forumulier adres gegevens</app-form-header>
-    <app-address-input-group [form]="ceoGroup" (onAddressDetailsChange)="CeoAddressDetailsChange($event)">CEO</app-address-input-group>
-    <app-address-input-group [form]="cfoGroup" (onAddressDetailsChange)="CtoAddressDetailsChange($event)">CTO</app-address-input-group>
-    <app-address-input-group [form]="ctoGroup" (onAddressDetailsChange)="CfoAddressDetailsChange($event)">CFO</app-address-input-group>
+    <app-address-input-group [form]="ceoGroup">CEO</app-address-input-group>
+    <app-address-input-group [form]="cfoGroup">CTO</app-address-input-group>
+    <app-address-input-group [form]="ctoGroup">CFO</app-address-input-group>
     <app-form-footer (onSubmitButtonClick)="submitButtonClick()"></app-form-footer>
 </form>
