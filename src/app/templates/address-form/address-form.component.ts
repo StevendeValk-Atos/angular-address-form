@@ -3,11 +3,11 @@ import { AddressDetails } from "src/app/models/AddressDetails";
 import { AddressFormData } from "src/app/models/AddressFormData";
 
 @Component({
-    selector: "app-address-input-form",
-    templateUrl: "./address-input-form.component.html",
-    styleUrls: ["./address-input-form.component.scss"],
+    selector: 'app-address-form',
+    templateUrl: './address-form.component.html',
+    styleUrls: ['./address-form.component.scss'],
 })
-export class AddressInputFormComponent {
+export class AddressFormComponent {
     addressFormData: AddressFormData = new AddressFormData();
 
     CeoAddressDetailsChange(addressDetails: AddressDetails) {

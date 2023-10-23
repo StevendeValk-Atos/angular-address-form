@@ -9,7 +9,7 @@ import { LabeledInputComponent } from './molecules/labeled-input/labeled-input.c
 import { AddressInputGroupComponent } from './organisms/address-input-group/address-input-group.component';
 import { InputGroupTitleComponent } from './atoms/input-group-title/input-group-title.component';
 import { FormSubmitButtonComponent } from './atoms/form-submit-button/form-submit-button.component';
-import { AddressInputFormComponent } from './templates/address-input-form/address-input-form.component';
+import { AddressFormComponent } from './templates/address-form/address-form.component';
 import { FormFooterComponent } from './molecules/form-footer/form-footer.component';
 import { FormTitleComponent } from './atoms/form-title/form-title.component';
 import { FormHeaderComponent } from './molecules/form-header/form-header.component';
@@ -23,7 +23,7 @@ import { FormHeaderComponent } from './molecules/form-header/form-header.compone
     AddressInputGroupComponent,
     InputGroupTitleComponent,
     FormSubmitButtonComponent,
-    AddressInputFormComponent,
+    AddressFormComponent,
     FormFooterComponent,
     FormTitleComponent,
     FormHeaderComponent
