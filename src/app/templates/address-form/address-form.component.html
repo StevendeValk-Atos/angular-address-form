@@ -1,7 +1,7 @@
 <form [formGroup]="addressForm">
-    <app-form-header>Forumulier adres gegevens</app-form-header>
+    <app-form-header>Formulier adres gegevens</app-form-header>
     <app-address-input-group [form]="ceoGroup">CEO</app-address-input-group>
-    <app-address-input-group [form]="cfoGroup">CTO</app-address-input-group>
     <app-address-input-group [form]="ctoGroup">CFO</app-address-input-group>
+    <app-address-input-group [form]="cfoGroup">CTO</app-address-input-group>
     <app-form-footer (onSubmitButtonClick)="submitButtonClick()"></app-form-footer>
 </form>

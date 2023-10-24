@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormControl, FormGroup } from "@angular/forms";
 import { AddressDetails } from "src/app/models/AddressDetails";
 import { AddressFormData } from "src/app/models/AddressFormData";
+import { HttpClient } from  '@angular/common/http';
 
 @Component({
     selector: "app-address-form",
@@ -9,7 +10,7 @@ import { AddressFormData } from "src/app/models/AddressFormData";
     styleUrls: ["./address-form.component.scss"],
 })
 export class AddressFormComponent implements OnInit {
-    constructor(private formBuilder: FormBuilder) {}
+    constructor(private formBuilder: FormBuilder, private httpClient: HttpClient) {}
 
     addressForm!: FormGroup;
     ngOnInit(): void {
@@ -30,7 +31,21 @@ export class AddressFormComponent implements OnInit {
                 city: new FormControl(""),
             }),
         });
+
+        this.fillInFormData();
     }
+
+    fillInFormData() {
+        this.httpClient.get<AddressFormData>("./assets/data/data.json").subscribe((response) => {
+            this.addressForm.patchValue({
+                ceo: response.ceo,
+                cfo: response.cfo,
+                cto: response.cto
+            });
+
+            console.log(response)
+        });
+    };
 
     get ceoGroup(): FormGroup {
         const control = this.addressForm.get('ceo');

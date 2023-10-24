@@ -1,17 +1,17 @@
-[
-    {
+{
+    "ceo": {
         "address": "Molenweg 23",
         "name": "Lisa de Jong",
         "city": "Utrecht"
     },
-    {
+    "cfo": {
         "address": "Dorpsstraat 69",
         "name": "Pieter Bakker",
         "city": "Amsterdam"
     },
-    {
+    "cto": {
         "address": "Kerkstraat 42",
         "name": "Mohamed El Amrani",
         "city": "Eindhoven"
     }
-]
+}

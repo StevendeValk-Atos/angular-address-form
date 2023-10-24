@@ -1,13 +1,13 @@
 import { AddressDetails } from "./AddressDetails"
 
 export class AddressFormData {
-    CEO: AddressDetails;
-    CFO: AddressDetails;
-    CTO: AddressDetails;
+    ceo: AddressDetails;
+    cfo: AddressDetails;
+    cto: AddressDetails;
 
     public constructor(){
-        this.CEO = new AddressDetails();
-        this.CFO = new AddressDetails();
-        this.CTO = new AddressDetails();
+        this.ceo = new AddressDetails();
+        this.cfo = new AddressDetails();
+        this.cto = new AddressDetails();
     }
 }
