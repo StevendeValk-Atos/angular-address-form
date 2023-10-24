@@ -37,11 +37,7 @@ export class AddressFormComponent implements OnInit {
 
     fillInFormData() {
         this.httpClient.get<AddressFormData>("./assets/data/data.json").subscribe((response) => {
-            this.addressForm.patchValue({
-                ceo: response.ceo,
-                cfo: response.cfo,
-                cto: response.cto
-            });
+            this.addressForm.patchValue(response);
 
             console.log(response)
         });
