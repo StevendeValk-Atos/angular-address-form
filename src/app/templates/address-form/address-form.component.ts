@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { FormBuilder, FormControl, FormGroup } from "@angular/forms";
-import { AddressDetails } from "src/app/models/AddressDetails";
 import { AddressFormData } from "src/app/models/AddressFormData";
 import { HttpClient } from "@angular/common/http";
 
