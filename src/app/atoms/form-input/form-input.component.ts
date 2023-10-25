@@ -7,5 +7,5 @@ import { FormControl } from "@angular/forms";
     styleUrls: ["./form-input.component.scss"],
 })
 export class FormInputComponent {
-    @Input() controlName!: FormControl;
+    @Input() control!: FormControl;
 }

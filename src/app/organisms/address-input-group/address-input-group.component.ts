@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Output, Input } from "@angular/core";
-import { FormGroup } from "@angular/forms";
+import { FormControl, FormGroup } from "@angular/forms";
 import { AddressDetails } from "src/app/models/AddressDetails";
 
 @Component({
@@ -10,4 +10,8 @@ import { AddressDetails } from "src/app/models/AddressDetails";
 export class AddressInputGroupComponent {
     @Output() onAddressDetailsChange = new EventEmitter<any>();
     @Input() form!: FormGroup;
+
+    getControl(controlName: string) {
+        return this.form.controls[controlName] as FormControl;
+    }
 }

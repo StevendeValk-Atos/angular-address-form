@@ -2,7 +2,7 @@
     <app-input-group-title>
         <ng-content></ng-content>
     </app-input-group-title>
-    <app-labeled-input [form]="form" controlName="name">Naam:</app-labeled-input>
-    <app-labeled-input [form]="form" controlName="address">Adres:</app-labeled-input>
-    <app-labeled-input [form]="form" controlName="city">Woonplaats:</app-labeled-input>
+    <app-labeled-input [control]="getControl('name')">Naam:</app-labeled-input>
+    <app-labeled-input [control]="getControl('address')">Adres:</app-labeled-input>
+    <app-labeled-input [control]="getControl('city')">Woonplaats:</app-labeled-input>
 </div>

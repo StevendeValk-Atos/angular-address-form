@@ -7,16 +7,5 @@ import { FormControl, FormGroup } from "@angular/forms";
     styleUrls: ["./labeled-input.component.scss"],
 })
 export class LabeledInputComponent {
-    @Input() form!: FormGroup;
-    @Input() controlName!: string;
-
-    get control(): FormControl {
-        const control = this.form.get(this.controlName);
-        if (control instanceof FormControl) {
-            return control;
-        }
-        else {
-            throw new Error("Control must be a FormControl");
-        }
-    }
+    @Input() control!: FormControl;
 }
