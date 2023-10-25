@@ -50,6 +50,6 @@ export class AddressFormComponent implements OnInit {
     }
 
     submitButtonClick(): void {
-        console.log(this.addressForm);
+        console.log(this.addressForm.value);
     }
 }
