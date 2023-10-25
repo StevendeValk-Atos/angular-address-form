@@ -38,34 +38,11 @@ export class AddressFormComponent implements OnInit {
     fillInFormData() {
         this.httpClient.get<AddressFormData>("./assets/data/data.json").subscribe((response) => {
             this.addressForm.patchValue(response);
-
-            console.log(response)
         });
     };
 
-    get ceoGroup(): FormGroup {
-        const control = this.addressForm.get('ceo');
-        if (control instanceof FormGroup) {
-            return control;
-        } else {
-            throw new Error('Control must be a FormGroup');
-        }
-    }
-    get cfoGroup(): FormGroup {
-        const control = this.addressForm.get('cfo');
-        if (control instanceof FormGroup) {
-            return control;
-        } else {
-            throw new Error('Control must be a FormGroup');
-        }
-    }
-    get ctoGroup(): FormGroup {
-        const control = this.addressForm.get('cto');
-        if (control instanceof FormGroup) {
-            return control;
-        } else {
-            throw new Error('Control must be a FormGroup');
-        }
+    getFormGroup(groupName: string) : FormGroup {
+        return this.addressForm.get(groupName) as FormGroup;
     }
 
     submitButtonClick(): void {
